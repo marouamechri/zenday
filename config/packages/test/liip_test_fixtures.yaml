@@ -1,0 +1,6 @@
+liip_test_fixtures:
+  cache_db:
+    enabled: false
+    sqlite: liip_test_fixtures.services_database_backup.sqlite
+  cache_metadata: false
+  keep_database_and_schema: false

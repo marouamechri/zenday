@@ -1,0 +1,13 @@
+api_platform:
+    title: Mon API moment positifs ZenDay
+    description: API pour gérer les moments positifs de ZenDay
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity']
+    version: 1.0.0
+    formats:
+        jsonld: ['application/ld+json']
+        json: ['application/json'] 
+    defaults:
+        stateless: true
+        cache_headers:
+            vary: ['Content-Type', 'Authorization', 'Origin']

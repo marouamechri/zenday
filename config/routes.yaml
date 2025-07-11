@@ -1,5 +1,11 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+api_platform:
+    resource: .
+    type: api_platform
+    prefix: /api
+
+_security_logout:
+    resource: security.route_loader.logout
+    type: service
+# config/routes.yaml
+api_login_check:
+    path: /api/login

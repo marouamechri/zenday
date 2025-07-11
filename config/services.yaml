@@ -10,6 +10,22 @@ services:
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+    
+    App\EventSubscriber\:
+        resource: '../src/EventSubscriber/'
+        tags: [kernel.event_subscriber]    
+        
+    # Subscriber pour la gestion des erreurs JWT
+    App\EventSubscriber\JWTExceptionSubscriber:
+        tags: ['kernel.event_subscriber']
+
+    App\DataFixtures\:
+        resource: '../src/DataFixtures'
+        tags: ['doctrine.fixture.orm']
+        autowire: true
+        autoconfigure: true
+        public: true
+
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
