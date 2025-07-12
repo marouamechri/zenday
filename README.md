@@ -1,6 +1,6 @@
 # 🌿 Moments Positifs
 
-ZenDay est une API REST développée en Symfony qui permet aux utilisateurs de capturer, organiser et revoir leurs moments positifs au quotidien. L’objectif est de favoriser le bien-être en mettant en avant les émotions positives à travers une application simple et accessible.
+ZenDay est une API REST développée en Symfony qui permet aux utilisateurs de capturer et revoir leurs moments positifs au quotidien. L’objectif est de favoriser le bien-être en mettant en avant les émotions positives à travers une application simple et accessible.
 
 ---
 
@@ -90,6 +90,8 @@ L'API utilise :
 
 # 📌 TODO
  CRUD Moments 
+ 
+ - capturer les moments positifs.
 
  - Voir les statistiques de l’utilisateur : nombre de moments par semaine, humeur dominante, etc.
 
