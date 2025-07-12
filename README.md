@@ -1,4 +1,4 @@
-# 🌿 Moments Positifs
+# 🌿 ZenDay
 
 ZenDay est une API REST développée en Symfony qui permet aux utilisateurs de capturer et revoir leurs moments positifs au quotidien. L’objectif est de favoriser le bien-être en mettant en avant les émotions positives à travers une application simple et accessible.
 
