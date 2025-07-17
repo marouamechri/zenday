@@ -9,7 +9,6 @@ ZenDay est une API REST développée en Symfony qui permet aux utilisateurs de c
 ### 👤 Utilisateur
 - `POST /api/register` — Créer un compte utilisateur
 - `POST /api/login` — Se connecter et obtenir un token JWT
-- `GET /api/me` — Récupérer les informations de son profil connecté
 
 ### 🌿 Moments
 - `POST /api/moments` — Ajouter un moment (titre, description, humeur, tag, localisation)
@@ -21,10 +20,7 @@ ZenDay est une API REST développée en Symfony qui permet aux utilisateurs de c
 ### 🧠 Tags & Humeurs
 - `GET /api/tags` — Récupérer la liste des tags positifs (`gratitude`, `détente`, `sourire`, etc.)
 - `GET /api/humeurs` — Récupérer la liste des humeurs (`joie`, `calme`, `émerveillement`, etc.)
-
-### 💌 Bonus
-- `GET /api/moments/random` — Voir un moment positif aléatoire pour se remonter le moral
-
+- 
 ## ⚙️ Installation
 
 ### Prérequis
@@ -32,7 +28,7 @@ ZenDay est une API REST développée en Symfony qui permet aux utilisateurs de c
 - Composer
 - Symfony CLI (optionnel mais recommandé)
 - MySQL / MariaDB ou PostgreSQL
-- Un environnement web local (XAMPP, Laragon, Docker…)
+- Un environnement web local (XAMPP)
 
 ### Étapes
 
@@ -54,7 +50,6 @@ php bin/console doctrine:migrations:migrate
 
 - Ajoute ceci dans ton fichier .env.local :
     JWT_PASSPHRASE=ta-passphrase
-
 
 # 🔐 Sécurité
 
@@ -86,6 +81,10 @@ L'API utilise :
 - ✅ Système de tags et d’humeurs
 - ✅ API REST sécurisée (JWT)
 - ✅Filtres par humeur et tags
+
+## ✨ TODO 
+- `GET /api/moments/random` — Voir un moment positif aléatoire pour se remonter le moral
+-  `GET /api/me` — Récupérer les informations de son profil connecté
 
 
 # 📌 TODO
